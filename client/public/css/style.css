@@ -368,6 +368,7 @@ footer img:hover {
   font-size: 1.5rem;
   cursor: pointer;
   color: teal;
+  background-color: white;
 }
 .fa-info-circle::after {
   content: "";
@@ -867,6 +868,7 @@ footer img:hover {
     font-size: 1.5rem;
     cursor: pointer;
     color: teal;
+    background-color: white;
   }
   .fa-info-circle::after {
     content: "";
