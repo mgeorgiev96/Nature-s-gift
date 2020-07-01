@@ -1,0 +1,949 @@
+html, body {
+  padding: 0;
+  height: 100vh;
+  width: 98vw;
+  margin: 0;
+  background-color: black;
+}
+
+footer {
+  background-color: rgba(127, 205, 205, 0.8);
+  width: 96.05vw;
+  margin-left: 1vw;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: black;
+  padding: 15px 0;
+  font-family: "Playball", cursive;
+  position: relative;
+  margin-bottom: 1%;
+  border: 2px solid white;
+  border-top: none;
+  font-weight: bold;
+}
+footer p {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+footer .left_footer, footer .right_footer {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Gruppo", cursive;
+}
+footer .left_footer p, footer .right_footer p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+footer .left_footer {
+  position: absolute;
+  text-transform: uppercase;
+  left: 5%;
+  top: 20%;
+}
+footer .right_footer {
+  position: absolute;
+  text-transform: uppercase;
+  right: 5%;
+  top: 20%;
+}
+footer h3 {
+  margin-bottom: 40px;
+}
+footer img {
+  margin: 0 30px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+footer img:hover {
+  background-color: white;
+  transform: scale(1.1) translateY(-5px);
+  transition: 500ms;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.8;
+}
+.container-fluid .carousel {
+  height: auto;
+  color: white;
+}
+.container-fluid .carousel .carousel-inner {
+  height: 100%;
+  width: 100%;
+}
+.container-fluid .carousel .carousel-indicators li {
+  display: none;
+}
+.container-fluid .carousel .carousel-control-next {
+  width: 10vw;
+}
+.container-fluid .carousel .carousel-control-next span {
+  background-image: url("../images/149668.svg");
+  width: 3rem;
+  height: 3rem;
+}
+.container-fluid .carousel .carousel-control-prev {
+  width: 10vw;
+}
+.container-fluid .carousel .carousel-control-prev span {
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../images/149668.svg");
+  transform: rotate(180deg);
+}
+.container-fluid .shop_window_container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.container-fluid .shop_window_container .title_text {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 20px 0;
+  font-size: 1.5rem;
+  font-family: "Love Ya Like A Sister", cursive;
+}
+.container-fluid .shop_window_container .title_text span {
+  border: 3px solid white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background-color: black;
+  color: turquoise;
+}
+.container-fluid .shop_window_container .title_text::after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 3px;
+  left: 50%;
+  background-color: white;
+  top: 0;
+}
+.container-fluid .shop_window_container .title_text::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 3px;
+  left: 50%;
+  background-color: white;
+  top: 60px;
+}
+.container-fluid .shop_window_container .title_text img {
+  width: 75px;
+  height: 75px;
+  margin: 0 2%;
+}
+.container-fluid .background_image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  opacity: 1;
+  z-index: -1;
+  border: 2px solid white;
+  width: 98%;
+  margin-left: 1%;
+  padding: 40px 0;
+}
+.container-fluid .background_aloe {
+  background-image: url("../images/aloeVeraB.webp");
+}
+.container-fluid .background_honey {
+  background-image: url("../images/honey.webp");
+}
+.container-fluid .background_detox {
+  background-image: url("../images/LemonWater.jpg");
+}
+.container-fluid .background_skincare {
+  background-image: url("../images/skincareB.webp");
+}
+.container-fluid .background_supplement {
+  background-image: url("../images/supplements.jpg");
+}
+.container-fluid .background_nutrition {
+  background-image: url("../images/manRunning.webp");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-fluid .background_nutrition .jumbotron {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 75%;
+  text-align: center;
+}
+.container-fluid .background_nutrition .jumbotron button {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid teal;
+  font-weight: bold;
+  position: relative;
+  color: black;
+  z-index: 1;
+  overflow: hidden;
+  padding: 10px 15px;
+}
+.container-fluid .background_nutrition .jumbotron button::after {
+  content: "";
+  background-color: rgba(0, 128, 128, 0.7);
+  width: 40%;
+  height: 300%;
+  position: absolute;
+  top: -75%;
+  left: -125%;
+  transform: rotate(45deg);
+  z-index: -1;
+  opacity: 0.2;
+}
+.container-fluid .background_nutrition .jumbotron button:hover::after {
+  top: -75%;
+  left: 25%;
+  transition: 200ms;
+  opacity: 1;
+}
+.container-fluid .background_nutrition .jumbotron button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.fav-icon {
+  z-index: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 17%;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 250%;
+  color: black;
+}
+.fav-icon:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.fav-saved {
+  z-index: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 17%;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 250%;
+  color: red;
+}
+.fav-saved:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #5abfbf;
+  background-position: center;
+  border: 2px solid white;
+  border-top: none;
+  width: 98.9vw;
+}
+
+#collasible-nav-dropdown {
+  opacity: 0;
+}
+
+.pay-history {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 0;
+}
+.pay-history:hover {
+  transform: scale(1.05) translateY(-5px);
+  background-color: white;
+  transition: 500ms;
+}
+
+.nav-item {
+  font-size: 1rem;
+  color: teal;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/icons8-list-100.png");
+  background-color: rgba(255, 255, 255, 0);
+  background-position: center;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0 10px;
+}
+.nav-item:hover {
+  transform: scale(1.05) translateY(-5px);
+  background-color: white;
+  transition: 500ms;
+}
+
+.user_profile_pic {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 3%;
+  top: 15%;
+  border: 1px solid white;
+}
+
+.close {
+  display: none;
+}
+
+.shop_aloe {
+  display: grid;
+  grid-template-columns: repeat(3, 22%);
+  grid-gap: 1rem;
+  justify-content: center;
+}
+.shop_aloe .card {
+  color: black;
+  justify-content: center;
+  background-color: black;
+  flex-wrap: nowrap;
+  position: relative;
+  height: 30vh;
+  border: 3px solid black;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+.shop_aloe .card .active_img {
+  opacity: 0.5;
+  transition: 750ms;
+  filter: blur(1px);
+}
+.shop_aloe .card .card-img-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.shop_aloe .card .card-title {
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+}
+.shop_aloe .card .card-body {
+  text-align: center;
+  color: white;
+}
+
+.fa-info-circle {
+  position: absolute;
+  top: 1.5%;
+  left: 1.5%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: teal;
+}
+.fa-info-circle::after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: -125%;
+  left: -145%;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.info_item {
+  position: absolute;
+  top: 0;
+  left: 2.5%;
+}
+.info_item .toast .toast-header {
+  font-size: 0.9rem;
+}
+.info_item .toast .toast-body {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.info_item .toast .toast-body .add_item {
+  font-size: 0;
+  color: seagreen;
+  font-weight: bold;
+}
+.info_item .toast .toast-body h6 {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.info_item .toast .toast-body p {
+  text-align: left;
+}
+.info_item .toast .toast-body div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.info_item .toast .toast-body div input {
+  width: 50%;
+  margin: 0 0 4% 5%;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+}
+.info_item .toast .toast-body label {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.info_item .toast .toast-body .fa-cart-plus {
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: seagreen;
+  border-radius: 50%;
+  padding: 7px;
+  background-color: white;
+  border: 1px dashed seagreen;
+}
+.info_item .toast .toast-body .fa-cart-plus:hover {
+  transform: scale(1.1);
+  border: 1px solid seagreen;
+  transition: 500ms;
+}
+
+.purchase_container {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  color: white;
+  z-index: 2;
+  width: 50%;
+  text-align: center;
+  left: 25%;
+  height: auto;
+  top: 40%;
+  border: 2px solid white;
+  display: none;
+}
+.purchase_container h2 {
+  background-color: rgba(0, 128, 128, 0.7);
+  padding: 10px 0;
+  position: relative;
+  border-bottom: 2px solid white;
+  font-size: 1.2rem;
+}
+.purchase_container h2 i {
+  position: absolute;
+  right: 3%;
+  top: 30%;
+  z-index: 0;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.purchase_container h2 i:hover {
+  color: red;
+  transition: 350ms;
+  transform: scale(1.05);
+}
+.purchase_container ul {
+  list-style: none;
+}
+.purchase_container ul li {
+  padding: 5px 0;
+}
+
+.cart_container {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: black;
+  width: 50%;
+  height: auto;
+  z-index: 2;
+  top: 30%;
+  left: 25%;
+  overflow: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border: 2px solid white;
+  transition: 500ms;
+  display: none;
+}
+.cart_container div {
+  display: flex;
+  background-color: rgba(0, 128, 128, 0.8);
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  border-bottom: 2px solid white;
+  padding: 15px 0 10px 0;
+}
+.cart_container div i {
+  position: absolute;
+  top: 30%;
+  right: 3%;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.cart_container div i:hover {
+  color: red;
+  transition: 350ms;
+  transform: scale(1.05);
+}
+.cart_container ul {
+  list-style: none;
+  color: white;
+}
+.cart_container ul .stripe_button {
+  border-bottom: none;
+  align-self: center;
+}
+.cart_container ul li {
+  margin: 10px 0;
+  text-align: center;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 0 5px 0;
+}
+.cart_container ul li i {
+  font-size: 1.2rem;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.cart_container ul li i:hover {
+  color: red;
+  transition: 350ms;
+  transform: scale(1.05);
+}
+.cart_container ul li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 15px 0 5px;
+  border: 1px solid white;
+}
+
+.show_cart {
+  opacity: 1;
+  height: 40%;
+  transition: 500ms;
+}
+
+.profile_logo {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.popover_message {
+  background-color: green;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  opacity: 0;
+}
+
+.show_message {
+  animation: show 12s linear;
+}
+
+.stripe_button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none !important;
+  background: rgba(255, 255, 255, 0) !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+.stripe_button p {
+  width: 2.8rem;
+  height: 2.8rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  border-radius: 50%;
+  margin: 10px 0 0 10px;
+  border: 1px solid black;
+}
+.stripe_button p:hover {
+  background-color: gold;
+  transition: 400ms;
+  transform: scale(0.95) translateY(-5px);
+}
+.stripe_button span {
+  border-radius: 0 !important;
+  background-image: none !important;
+  color: black !important;
+}
+
+@keyframes show {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media all and (max-width: 996px) {
+  footer {
+    background-color: rgba(127, 205, 205, 0.8);
+    width: 96.05vw;
+    margin-left: 1vw;
+    height: auto;
+    align-items: center;
+    color: black;
+    padding: 15px 0;
+    font-family: "Playball", cursive;
+    position: relative;
+    margin-bottom: 1%;
+    border: 2px solid white;
+    border-top: none;
+    font-weight: bold;
+  }
+  footer p {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  footer .left_footer, footer .right_footer {
+    position: absolute;
+    text-transform: uppercase;
+    font-family: "Gruppo", cursive;
+  }
+  footer .left_footer p, footer .right_footer p {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  footer .left_footer {
+    position: absolute;
+    text-transform: uppercase;
+    left: 2%;
+    top: 30%;
+  }
+  footer .right_footer {
+    position: absolute;
+    text-transform: uppercase;
+    right: 2%;
+    top: 30%;
+  }
+  footer h3 {
+    margin-bottom: 10px;
+  }
+  footer img {
+    margin: 0 20px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  footer img:hover {
+    background-color: white;
+    transform: scale(1.1) translateY(-5px);
+    transition: 500ms;
+  }
+
+  .purchase_container {
+    width: 80%;
+    left: 10%;
+    top: 50%;
+  }
+  .purchase_container h2 {
+    font-size: 1rem;
+    background-color: rgba(0, 128, 128, 0.7);
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 2px solid white;
+  }
+  .purchase_container h2 i {
+    position: absolute;
+    right: 3%;
+    top: 30%;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .purchase_container h2 i:hover {
+    color: red;
+    transition: 350ms;
+    transform: scale(1.05);
+  }
+  .purchase_container ul {
+    list-style: none;
+  }
+  .purchase_container ul li {
+    padding: 5px 0;
+  }
+
+  .cart_container {
+    width: 80%;
+    left: 10%;
+  }
+  .cart_container ul li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 15px 0 5px;
+    border: 1px solid white;
+  }
+
+  .toast-header {
+    font-size: 0.7rem;
+  }
+
+  .dropdown {
+    margin-left: 4%;
+    margin-top: 7.5%;
+  }
+
+  .pay-history {
+    margin-left: 5%;
+  }
+
+  .container-fluid {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+  }
+  .container-fluid .carousel {
+    height: auto;
+    color: white;
+  }
+  .container-fluid .carousel .carousel-inner {
+    height: 100%;
+    width: 100%;
+  }
+  .container-fluid .carousel .carousel-indicators li {
+    display: none;
+  }
+  .container-fluid .carousel .carousel-control-next {
+    width: 5vw;
+    margin-right: 2%;
+  }
+  .container-fluid .carousel .carousel-control-next span {
+    width: 2rem;
+    height: 2rem;
+  }
+  .container-fluid .carousel .carousel-control-prev {
+    width: 5vw;
+    margin-left: 2%;
+  }
+  .container-fluid .carousel .carousel-control-prev span {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .shop_aloe {
+    display: grid;
+    grid-template-columns: repeat(2, 35%);
+    grid-gap: 1rem;
+    justify-content: center;
+  }
+  .shop_aloe .card {
+    color: black;
+    justify-content: center;
+    background-color: black;
+    flex-wrap: nowrap;
+    position: relative;
+    height: 30vh;
+    border: 3px solid black;
+    overflow: hidden;
+  }
+  .shop_aloe .card .active_img {
+    opacity: 0.5;
+    transition: 750ms;
+    filter: blur(1px);
+  }
+  .shop_aloe .card .card-img-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .shop_aloe .card .card-title {
+    text-align: center;
+    color: white;
+  }
+  .shop_aloe .card .card-body {
+    text-align: center;
+    color: white;
+  }
+  .shop_aloe .info_item {
+    position: absolute;
+    top: 0;
+    left: 10%;
+  }
+  .shop_aloe .info_item .toast .toast-body {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 0.7rem;
+  }
+  .shop_aloe .info_item .toast .toast-body .add_item {
+    font-size: 0;
+    color: seagreen;
+    font-weight: bold;
+  }
+  .shop_aloe .info_item .toast .toast-body h6 {
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+  .shop_aloe .info_item .toast .toast-body p {
+    text-align: left;
+  }
+  .shop_aloe .info_item .toast .toast-body div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .shop_aloe .info_item .toast .toast-body div input {
+    width: 50%;
+    margin: 0 0 4% 5%;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+  }
+  .shop_aloe .info_item .toast .toast-body label {
+    font-weight: bold;
+  }
+  .shop_aloe .info_item .toast .toast-body .fa-cart-plus {
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: seagreen;
+    border-radius: 50%;
+    padding: 7px;
+    background-color: white;
+    border: 1px dashed seagreen;
+  }
+  .shop_aloe .info_item .toast .toast-body .fa-cart-plus:hover {
+    transform: scale(1.1);
+    border: 1px solid seagreen;
+    transition: 500ms;
+  }
+
+  .fa-info-circle {
+    position: absolute;
+    top: 1.5%;
+    left: 1.5%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: teal;
+  }
+  .fa-info-circle::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -125%;
+    left: -145%;
+    z-index: -1;
+    border-radius: 10px;
+  }
+}
+@media all and (max-width: 600px) {
+  footer {
+    background-color: rgba(127, 205, 205, 0.8);
+    width: 96.05vw;
+    margin-left: 1vw;
+    height: auto;
+    align-items: center;
+    color: black;
+    padding: 15px 0;
+    font-family: "Playball", cursive;
+    position: relative;
+    margin-bottom: 1%;
+    border: 2px solid white;
+    border-top: none;
+    font-weight: bold;
+  }
+  footer p {
+    font-size: 0.7rem;
+    font-weight: normal;
+  }
+  footer .left_footer, footer .right_footer {
+    position: absolute;
+    text-transform: uppercase;
+    font-family: "Gruppo", cursive;
+  }
+  footer .left_footer p, footer .right_footer p {
+    font-size: 0.6rem;
+    font-weight: bold;
+  }
+  footer .left_footer {
+    position: absolute;
+    text-transform: uppercase;
+    left: 2%;
+    top: 30%;
+  }
+  footer .right_footer {
+    position: absolute;
+    text-transform: uppercase;
+    right: 2%;
+    top: 30%;
+  }
+  footer h3 {
+    margin-bottom: 10px;
+  }
+  footer img {
+    margin: 0 20px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  footer img:hover {
+    background-color: white;
+    transform: scale(1.1) translateY(-5px);
+    transition: 500ms;
+  }
+
+  .shop_aloe {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-gap: 1rem;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,264 @@
+
+
+html,body{
+    padding: 0;
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+}
+.error_image{
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.error_container{
+    width: 30vw;
+    font-family: 'MuseoModerno', cursive;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-bottom: 10px;
+}
+
+.error_message{
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 3px;
+    color: white;
+}
+.error_button{
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    padding: 0 10px;
+    text-align: center;
+    overflow: hidden;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.error_button:hover{
+    transition: 500ms;
+    background-color: white;
+    color: black;
+}
+
+.error_button:visited{
+
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-signup-form{
+    box-shadow: 0 0 15px black;
+    width: 35%;
+    margin: 3% auto;
+    text-align: center;
+    flex-flow: column;
+    background-color: rgba(0,0,0, 0.6);
+    color: white;
+    position: relative;
+    padding-top: 40px;
+}
+
+.login-signup-form h2{
+    padding: 10px 0;
+}
+.login-signup-form p{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.login-signup-form .google_logo{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 2px;
+}
+.login-signup-form .google_btn{
+    background-color: #83C157;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'Krona One', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+.login-signup-form .google_btn:visited{
+    color: white;
+}
+.login-signup-form .google_btn:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 350ms;
+    color: black;
+}
+
+
+.login-signup-form .create_account_section a{
+    font-weight: bold;
+}
+
+.login-signup-form .logo_icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+}
+.login-signup-form .logo_icon_brand{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.login-signup-form input{
+    border: 2px solid black;
+    width: 65%;
+    margin: 0 auto;
+}
+.login-signup-form input:focus{
+    background-color: rgba(0, 0, 0, 0);
+    transform: scale(1.01);
+    transition: 300ms;
+    color: white;
+}
+form .form-group{
+    padding: 10px 0;
+}
+
+.btn{
+    width: 30%;
+    align-self: center;
+    background-color: #83C157;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 20px 0 25px 0;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.btn::after{
+    position: absolute;
+    background-color: white;
+    width: 75px;
+    content: "";
+    height: 75px;
+    transform: rotate(45deg);
+    top: -19px;
+    left: -100px;
+    position: absolute;
+}
+.btn::before{
+    position: absolute;
+    background-color: white;
+    width: 75px;
+    content: "";
+    height: 75px;
+    transform: rotate(45deg);
+    top: -19px;
+    right: -100px;
+    position: absolute;
+}
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    transition: 150ms;
+    transform:scale(1.01);
+
+}
+.btn:hover::after{
+    left: -70px;
+    background-color: #83C157;
+    transition: 550ms;
+
+}
+.btn:hover::before{
+    right: -70px;
+    background-color: #83C157;
+    transition: 550ms;
+
+}
+
+#login_redirect{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.btn:visited{
+
+    color: white;
+}
+
+
+
+.login_back{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    left: 0;
+    background-color: black;
+}
+
+
+
+@media all and (max-width:1300px){
+    .btn{
+        width: 35%;
+        align-self: center;
+        background-color: #83C157;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 20px 0 25px 0;
+        position: relative;
+        overflow: hidden;
+    
+    }
+
+    .login-signup-form{
+        box-shadow: 0 0 15px black;
+        width: 45%;
+        margin: 5% auto;
+        text-align: center;
+        flex-flow: column;
+        background-color: rgba(0,0,0, 0.6);
+        color: white;
+        position: relative;
+        padding-top: 40px;
+    }
+}
+
+@media all and (max-width: 800px){
+    .login-signup-form{
+        box-shadow: 0 0 10px black;
+        width: 70%;
+        margin: 5% auto;
+        text-align: center;
+        flex-flow: column;
+        background-color: rgba(0,0,0, 0.6);
+        color: white;
+        position: relative;
+        padding-top: 40px;
+    }
+}
