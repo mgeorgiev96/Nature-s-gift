@@ -25,7 +25,7 @@ function DetoxItems() {
     price: '4$'
   })), /*#__PURE__*/_react.default.createElement(_Card.default, null, /*#__PURE__*/_react.default.createElement(_Card.default.Img, {
     variant: "top",
-    src: "./images/detox2.jpg"
+    src: "./images/detox2.JPG"
   }), /*#__PURE__*/_react.default.createElement(_Toast.default, {
     name: 'Orange-Carrot Ginger Detox ',
     info: 'Homemade detox drink - 500ml.',
