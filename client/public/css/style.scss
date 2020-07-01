@@ -367,12 +367,16 @@ footer{
 }
 .fa-info-circle{
     position: absolute;
-    top: 1.5%;
-    left: 1.5%;
+    top: 0;
+    left: 0;
     font-size: 1.5rem;
     cursor: pointer;
     color: teal;
     background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
     &::after{
         content: "";
         background-color: white;
@@ -884,12 +888,16 @@ footer{
 }
 .fa-info-circle{
     position: absolute;
-    top: 1.5%;
-    left: 1.5%;
+    top: 0;
+    left: 0;
     font-size: 1.5rem;
     cursor: pointer;
     color: teal;
     background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
     &::after{
         content: "";
         background-color: white;
