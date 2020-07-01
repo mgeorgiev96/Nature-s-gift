@@ -11,7 +11,7 @@ function DetoxItems() {
         <Pop name={'Green Apple and Cucumber Juice'} info={'Refreshing detox drink - 500ml.'} price={'4$'}/>
       </Card>
       <Card>
-        <Card.Img variant="top" src={"./images/detox2.jpg"} />
+        <Card.Img variant="top" src={"./images/detox2.JPG"} />
         <Pop name={'Orange-Carrot Ginger Detox '} info={'Homemade detox drink - 500ml.'} price={'3$'}/>
       </Card>
       <Card>
