@@ -50977,7 +50977,6 @@ module.exports = warning;
 
 }).call(this)}).call(this,require('_process'))
 },{"_process":1}],210:[function(require,module,exports){
-(function (process){(function (){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50996,7 +50995,6 @@ var _Profile = _interopRequireDefault(require("./Profile"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  console.log(process.env);
   return /*#__PURE__*/_react.default.createElement(_Context.ShopProvider, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/profile",
     component: _Profile.default
@@ -51005,8 +51003,7 @@ function App() {
 
 var _default = App;
 exports.default = _default;
-}).call(this)}).call(this,require('_process'))
-},{"./Context":212,"./Profile":219,"_process":1,"react":190,"react-router-dom":177}],211:[function(require,module,exports){
+},{"./Context":212,"./Profile":219,"react":190,"react-router-dom":177}],211:[function(require,module,exports){
 "use strict";
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
