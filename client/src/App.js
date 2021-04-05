@@ -5,6 +5,7 @@ import Profile from './Profile';
 
 
 function App() {
+  console.log(process.env)
   return (
 <ShopProvider>
   <Router>
