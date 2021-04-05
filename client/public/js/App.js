@@ -16,6 +16,7 @@ var _Profile = _interopRequireDefault(require("./Profile"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
+  console.log(process.env);
   return /*#__PURE__*/_react.default.createElement(_Context.ShopProvider, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/profile",
     component: _Profile.default
